@@ -1,0 +1,22 @@
+{
+  "name": "dasa-test-api",
+  "version": "1.0.0",
+  "description": "DASA exams and labs API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FernandoLuizNemeChibli/dasa-test-api.git"
+  },
+  "author": "Fernando Luiz Neme Chibli",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FernandoLuizNemeChibli/dasa-test-api/issues"
+  },
+  "homepage": "https://github.com/FernandoLuizNemeChibli/dasa-test-api#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
