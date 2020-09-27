@@ -1,5 +1,6 @@
 const bodyParser = require('body-parser')
 const compression = require('compression')
+const config = require('config')
 const express = require('express')
 
 module.exports = () => {
