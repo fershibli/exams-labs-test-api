@@ -1,5 +1,3 @@
-const db = require('../db');
-
 module.exports = {
   create: () => db
   // create table laboratory with the enum above as data type
