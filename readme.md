@@ -10,5 +10,5 @@ _Feel free to change any of this details or to create tables by yourself in psql
 
 ## Running server
 Inside the root directory of the project, run the following commands:
-- `npm i` for the first run, or if the directory `node_modules` is missing
+- `npm i` (for the first run, or if the directory `node_modules` is missing)
 - `npm start`
