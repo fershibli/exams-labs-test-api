@@ -13,7 +13,7 @@ module.exports = {
         id SERIAL PRIMARY KEY,
         name VARCHAR(512) NOT NULL,
         address VARCHAR(1024) NOT NULL,
-        status laboratory_status DEFAULT 'ativo',
+        status laboratory_status DEFAULT 'ativo'
       );
     `)
     .then(res => console.log('Successfuly created model laboratory!'))
