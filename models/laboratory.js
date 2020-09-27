@@ -6,7 +6,7 @@ module.exports = {
             'ativo', 'inativo'
         );
 
-        CREATE TABLE laboratories(
+        CREATE TABLE laboratory(
             id SERIAL PRIMARY KEY,
             name VARCHAR(512) NOT NULL,
             address VARCHAR(1024) NOT NULL,

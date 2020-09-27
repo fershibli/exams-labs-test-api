@@ -9,13 +9,13 @@ module.exports = {
             'ativo', 'inativo'
         );
 
-        CREATE TABLE exams(
+        CREATE TABLE exam(
             id SERIAL PRIMARY KEY,
             name VARCHAR(512) NOT NULL,
             type exam_type NOT NULL,
             status exam_status DEFAULT 'ativo',
         );
 
-        CREATE INDEX ON exams(type);
+        CREATE INDEX ON exam(type);
     `),
 }
