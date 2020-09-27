@@ -1,5 +1,5 @@
 module.exports = {
-  create: () => db
+  create: db => db
   // create table laboratory with the enum above as data type
   .query(`
     CREATE TABLE exam_laboratory(
