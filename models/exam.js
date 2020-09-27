@@ -28,7 +28,7 @@ module.exports = {
         .query(`
           CREATE INDEX ON exam(type);
         `)
-        .then(res => console.log('Successfuly created model exam'))
+        .then(res => console.log('Successfuly created model exam!'))
         .catch(err => console.error('ERROR ON create INDEX exam(type)\n\n'+err.stack))
       )
       .catch(err => console.error('ERROR ON create TABLE exam\n\n'+err.stack))
