@@ -1,5 +1,5 @@
 module.exports = {
-  create: db => require('./create'),
-  drop: db => require('./drop'),
+  create: require('./create'),
+  drop: require('./drop'),
   //the functions below returns a promise of the query
 }
