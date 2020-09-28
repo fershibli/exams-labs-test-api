@@ -1,5 +1,6 @@
 module.exports = {
   insertExam: require('./insertExam'),
   listActive: require('./listActive'),
-  updateExam: require('./updateExam')
+  updateExam: require('./updateExam'),
+  removeExam: require('./removeExam')
 }
