@@ -1,5 +1,5 @@
-const examsRoutes = require('./exams')
+const examRoutes = require('./exam')
 
 module.exports = app => {
-  examsRoutes(app)
+  examRoutes(app)
 }
