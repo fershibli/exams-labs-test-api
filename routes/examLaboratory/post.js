@@ -7,7 +7,7 @@ module.exports = router => {
     examLaboratoryControler
       .insertExamLaboratory(exam_id, laboratory_id)
       .then(result => {
-        return res.status(200).send('Successfuly inserted new relation ' + { exam_id, laboratory_id })
+        return res.status(200).send('Successfuly inserted new relation ' + JSON.stringify({ exam_id, laboratory_id }))
       })
       .catch(err => res.status(406).send(err.message))
   })
