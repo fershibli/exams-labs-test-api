@@ -3,7 +3,6 @@ const examControler = require('../../services/exam')
 module.exports = router => {
   //list active exams
   router.get('/active', (req, res) =>{
-    const { name, type, status } = req.body
     examControler
       .listActive()
       .then(result => {
