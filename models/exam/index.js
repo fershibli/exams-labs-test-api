@@ -5,4 +5,5 @@ module.exports = {
   insert: require('./insert'),
   update: require('./update'),
   select: require('./select'),
+  delete: require('./delete')
 }
