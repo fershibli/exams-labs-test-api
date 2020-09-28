@@ -6,7 +6,10 @@ module.exports = router => {
     const { name, type, status } = req.body
     examControler
       .insertExam(name, type, status)
-      .then(result => res.status(200))
+      .then(result => {
+        const id = result.rows[0].id
+        return res.status(200).send('Successfuly inserted new exam with id='+id)
+      })
       .catch(err => res.status(406).send(err.message))
   })
   //new exam post routes can be added below
