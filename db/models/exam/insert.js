@@ -1,0 +1,28 @@
+//this module returns a promise of the query
+module.exports = (db, name, type, status) => {
+  let query_string = `
+    INSERT INTO 
+    exam(
+      name,
+      type`
+  if (status) {
+    query_string += ',status'
+  }
+  query_string += `
+  ) VALUES(
+    $1,
+    $2
+  `
+  if (status) {
+    query_string += ',$3'
+  }
+  query_string += ');'
+  console.log(query_string)
+  
+  query_values = [name, type]
+  if (status) {
+    query_values.push(status)
+  }
+
+  return db.query(query_string,query_values)
+}
