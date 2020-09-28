@@ -3,5 +3,6 @@ module.exports = {
   drop: require('./drop'),
   //the functions below returns a promise of the query
   insert: require('./insert'),
+  update: require('./update'),
   select: require('./select'),
 }
