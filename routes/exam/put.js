@@ -15,5 +15,5 @@ module.exports = router => {
       })
       .catch(err => res.status(406).send(err.message))
   })
-  //new exam post routes can be added below
+  //new exam put routes can be added below
 }
