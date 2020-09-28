@@ -13,10 +13,14 @@ which keys matches the column names, and values matches the values to search
 module.exports = query_terms => {
   let query = 'SELECT * FROM exam WHERE '
   Object.keys(query_terms).forEach((key, i, arr) =>{
-    query += key+' = $'+i
-    if (i < arr.length) query += ' AND '
+    query += key+' = $'+(i+1)
+    
+    if (i+1 < arr.length){
+      query += ' AND '
+    }
+      
   })
   query += ';'
   console.log(query);
-  return db.query(query, Object.values)
+  return db.query(query, Object.values(query_terms))
 }
