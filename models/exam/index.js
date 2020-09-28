@@ -4,6 +4,5 @@ module.exports = {
   //the functions below returns a promise of the query
   insert: require('./insert'),
   update: require('./update'),
-  select: require('./select'),
-  delete: require('./delete')
+  select: require('./select')
 }
