@@ -1,5 +1,6 @@
+const db = require('../../db')
 //this module is a promise that returns the result of the query when it'ss done
-module.exports = async (db, id, name, type, status) => {
+module.exports = async (id, name, type, status) => {
   //select the exam object
   const exam = await db
     .query(`

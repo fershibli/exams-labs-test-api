@@ -1,5 +1,6 @@
+const db = require('../../db')
 //this module returns a promise of the query
-module.exports = (db, name, type, status) => {
+module.exports = (name, type, status) => {
   let query_string = `
     INSERT INTO 
     exam(

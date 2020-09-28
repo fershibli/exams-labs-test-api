@@ -1,3 +1,4 @@
+const db = require('../../db')
 /* query_terms expects to receive an object 
 which keys matches the column names, and values matches the values to search
   example:
@@ -9,7 +10,7 @@ which keys matches the column names, and values matches the values to search
 */ 
 
 //this module returns a promise of the query
-module.exports = (db, query_terms) => {
+module.exports = query_terms => {
   let query = 'SELECT * FROM exam WHERE '
   Object.keys(query_terms).forEach((key, i, arr) =>{
     query += key+' = $'+i

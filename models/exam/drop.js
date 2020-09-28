@@ -1,4 +1,6 @@
-module.exports = db => db
+const db = require('../../db')
+
+module.exports = () => db
 .query('DROP TABLE exam;')
 .then(res => db
   .query('DROP TYPE exam_status;')

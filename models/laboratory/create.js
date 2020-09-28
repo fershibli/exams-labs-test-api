@@ -1,4 +1,6 @@
-module.exports = db => db
+const db = require('../../db')
+
+module.exports = () => db
 // create enum for laboratory status
 .query(`
   CREATE TYPE laboratory_status AS ENUM (

@@ -1,4 +1,6 @@
-module.exports = db => db
+const db = require('../../db')
+
+module.exports = () => db
 // create table laboratory with the enum above as data type
 .query(`
   CREATE TABLE exam_laboratory(
