@@ -16,7 +16,7 @@ module.exports = (db, name, type, status) => {
   if (status) {
     query_string += ',$3'
   }
-  query_string += ');'
+  query_string += ') RETURNING id;'
   console.log(query_string)
   
   query_values = [name, type]
