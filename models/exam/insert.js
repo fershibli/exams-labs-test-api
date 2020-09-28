@@ -19,7 +19,7 @@ module.exports = (db, name, type, status) => {
   query_string += ') RETURNING id;'
   console.log(query_string)
   
-  query_values = [name, type]
+  const query_values = [name, type]
   if (status) {
     query_values.push(status)
   }
