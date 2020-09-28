@@ -1,0 +1,256 @@
+{
+	"info": {
+		"_postman_id": "8b0b99a0-233d-408a-bd1b-7737afb9c7be",
+		"name": "Dasa test API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "exam",
+			"item": [
+				{
+					"name": "insertExam",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"exame teste 1\",\r\n    \"type\": \"imagem\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/exam/",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"exam",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "listActive",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": ""
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateExam",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"exame teste A\",\r\n    \"type\": \"analise clinica\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/exam/1",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"exam",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "removeExam",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/exam/1",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"exam",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "laboratory",
+			"item": [
+				{
+					"name": "insertLaboratory",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"LabFigueira\",\r\n    \"address\": \"rua das figueiras, 8\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/laboratory/",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"laboratory",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "listActive",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/laboratory/active",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"laboratory",
+								"active"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateLaboratory",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"LabFigzz\",\r\n    \"address\": \"rua das figueiras, 92\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/laboratory/1",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"laboratory",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "removeLaboratory",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/laboratory/1",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"laboratory",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "examLaboratory",
+			"item": [
+				{
+					"name": "insertExamLaboratory",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"exam_id\": 1,\r\n    \"laboratory_id\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/exam-laboratory/",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"exam-laboratory",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteExamLaboratory",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/exam-laboratory/1/1",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"exam-laboratory",
+								"1",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
