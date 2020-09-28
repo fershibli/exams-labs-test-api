@@ -1,6 +1,6 @@
-const create = require('create')
-const drop = require('drop')
-// const insert = require('insert')
+const create = require('./create')
+const drop = require('./drop')
+// const insert = require('./insert')
 
 module.exports = {
   create: db => create(db),
