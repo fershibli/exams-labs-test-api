@@ -1,14 +1,13 @@
-const examControler = require('../../services/exam')
+const examLaboratoryControler = require('../../services/examLaboratory')
 
 module.exports = router => {
   //insert new exam
   router.post('/', (req, res) =>{
-    const { name, type, status } = req.body
-    examControler
-      .insertExam(name, type, status)
+    const { exam_id, laboratory_id } = req.body
+    examLaboratoryControler
+      .insertExamLaboratory(exam_id, laboratory_id)
       .then(result => {
-        const id = result.rows[0].id
-        return res.status(200).send('Successfuly inserted new exam with id='+id)
+        return res.status(200).send('Successfuly inserted new relation ' + { exam_id, laboratory_id })
       })
       .catch(err => res.status(406).send(err.message))
   })

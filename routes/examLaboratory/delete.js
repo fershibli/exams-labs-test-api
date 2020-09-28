@@ -1,19 +1,20 @@
-const examControler = require('../../services/exam')
+const examLaboratoryControler = require('../../services/examLaboratory')
 
 module.exports = router => {
-  //update existing exam
-  router.delete('/:id', (req, res) =>{
-    const id = parseInt(req.params.id)
-    if (id == null || id == undefined){
-      return res.status(406).send('must provide id to delete')
+  //delete existing relation
+  router.delete('/:exam_id/:laboratory_id', (req, res) =>{
+    const exam_id = parseInt(req.params.exam_id)
+    const laboratory_id = parseInt(req.params.laboratory_id)
+    if (exam_id == null || exam_id == undefined ||
+      laboratory_id == null || laboratory_id == undefined){
+      return res.status(406).send('must provide exam_id andlaboratory_id  to delete')
     }
-    examControler
-      .removeExam(id)
+    examLaboratoryControler
+      .deleteExamLaboratory(exam_id, laboratory_id)
       .then(result => {
-        const id = result.rows[0].id
-        return res.status(200).send('Successfuly removed new exam with id='+id)
+        return res.status(200).send('Successfuly removed relation '+{ exam_id, laboratory_id })
       })
       .catch(err => res.status(406).send(err.message))
   })
-  //new exam delete routes can be added below
+  //new examLaboratory delete routes can be added below
 }
