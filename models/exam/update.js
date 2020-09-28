@@ -32,12 +32,12 @@ module.exports = async (id, name, type, status) => {
     query_string += 'status = $'+values.length+' ,'
   }
   query_string = query_string.slice(0, -1) //removes remaining comma
-  query_string += 'WHERE id = $1;'
+  query_string += 'WHERE id = $1 RETURNING *;'
 
   console.log(query_string)
 
   return await db
-    .query(query_string,query_values)
+    .query(query_string,values)
     .then(res => res)
     .catch(err => {
       throw err
