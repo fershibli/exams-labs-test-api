@@ -15,3 +15,10 @@ Inside the root directory of the project, run the following commands:
 
 ## Aditional Scripts:
 - To drop all tables in db run dropdb.js with command `node dropdb`
+
+## Postman
+- All examples of routes usage is avaible in `Dasa test API.postman_collection`
+
+## TODO:
+- Imrpove this readme, with requisitions specifications
+- Prevent duplicates in services
