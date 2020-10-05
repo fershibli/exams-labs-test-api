@@ -1,7 +1,7 @@
 {
-  "name": "dasa-test-api",
+  "name": "exams-labs-test-api",
   "version": "1.0.0",
-  "description": "DASA exams and labs API",
+  "description": "Exams and labs API",
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/FernandoLuizNemeChibli/dasa-test-api.git"
+    "url": "git+https://github.com/FernandoLuizNemeChibli/exams-labs-test-api.git"
   },
   "author": "Fernando Luiz Neme Chibli",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/FernandoLuizNemeChibli/dasa-test-api/issues"
+    "url": "https://github.com/FernandoLuizNemeChibli/exams-labs-test-api/issues"
   },
-  "homepage": "https://github.com/FernandoLuizNemeChibli/dasa-test-api#readme",
+  "homepage": "https://github.com/FernandoLuizNemeChibli/exams-labs-test-api#readme",
   "dependencies": {
     "body-parser": "^1.19.0",
     "config": "^3.3.2",

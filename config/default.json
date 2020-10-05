@@ -1,10 +1,10 @@
 {
   "db": {
     "credentials": {
-      "user": "dasatest",
+      "user": "examlabs",
       "host": "localhost",
-      "database": "dasatest",
-      "password": "postgres@PSQL.123",
+      "database": "examlabs",
+      "password": "exam@LABS.123",
       "port": 5432
     }
   },
